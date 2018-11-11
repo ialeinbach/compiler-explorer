@@ -120,7 +120,7 @@ c-preload:
 	$(MAKE) -C c-preload
 
 install-git-hooks:
-	ln -sf $(shell pwd)/etc/scripts/pre-commit .git/hooks/pre-commit
+	ln -sf $(shell pwd)/etc/scripts/pre-commit ../.git/modules/compiler-explorer/hooks/pre-commit
 .PHONY: install-git-hooks
 
 changelog:
